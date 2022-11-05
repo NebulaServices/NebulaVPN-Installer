@@ -1,0 +1,125 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+  height: 100%;
+  margin: 0%;
+}
+
+body {
+  background-color: #191724;
+  font-family: inter;
+  padding: 0;
+  margin: 0;
+  color: #F2F2F2;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+.divets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-app-region: no-drag;
+}
+
+
+header {
+  position: relative;
+  background-color: #353148;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 4px 4px 6px;
+  -webkit-app-region: drag;
+  height: 40px;
+  border-radius: 0px 0px 8px 8px;
+  transition: 200ms ease-in-out;
+}
+
+.NebVPNLogo {
+  height: 18px;
+  transform: scale(2.5);
+}
+
+.winBtns {
+  position: absolute;
+  right: 4px;
+}
+
+.winBtn {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 transparent;
+  transition: box-shadow 200ms ease-in-out;
+}
+
+.winBtn:hover {
+  box-shadow: inset 0 0 0px 3px #ffffffb5;
+}
+
+.winBtnClose {
+  background-color: #ff7068;
+}
+
+.winBtnMin {
+  background-color: #fdc855;
+}
+
+.winBtnMax {
+  background-color: #72e793;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.install-btn {
+    border-radius: 15px;
+    padding: 15px;
+    width: 250px;
+    font-family: "Inter", sans-serif;
+    background-color: #BEB3EE;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 250ms ease-out;
+}
+
+.install-btn:hover {
+    background-color: #a9a2c9;
+}
+
+.directory-btn {
+    border-radius: 15px;
+    padding: 5px;
+    width: 250px;
+    font-family: "Inter", sans-serif;
+    background-color: #aaa6c0;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 250ms ease-out;
+}
+.directory-btn:hover {
+    background-color: #878496;
+}
+#currentDirectory {
+    padding: 4px;
+}
